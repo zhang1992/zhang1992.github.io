@@ -131,22 +131,37 @@ nav[data-state=open] {
   transform: translateX(0%);
 }
 nav[data-state=open] ul li:nth-child(1) {
-  transition-delay: 0.16s;
+  transition-delay: 0.5s;
   transform: translateX(0px);
   opacity: 1;
 }
 nav[data-state=open] ul li:nth-child(2) {
-  transition-delay: 0.32s;
+  transition-delay: 1s;
   transform: translateX(0px);
   opacity: 1;
 }
 nav[data-state=open] ul li:nth-child(3) {
-  transition-delay: 0.48s;
+  transition-delay: 1.5s;
   transform: translateX(0px);
   opacity: 1;
 }
 nav[data-state=open] ul li:nth-child(4) {
-  transition-delay: 0.64s;
+  transition-delay: 2s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(5) {
+  transition-delay: 2.5s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(6) {
+  transition-delay: 3s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(7) {
+  transition-delay: 3.5s;
   transform: translateX(0px);
   opacity: 1;
 }
@@ -221,6 +236,15 @@ nav[data-state=open] ul li:nth-child(4) {
 		  </li>
 		  <li>
 		    <a id="a4">MOON</a>
+		  </li>
+		  <li>
+		    <a id="a5">GOOD</a>
+		  </li>
+		  <li>
+		    <a id="a6">EVERY</a>
+		  </li>
+		  <li>
+		    <a id="a7">NIGHT</a>
 		  </li>
 		  </ul>
 		</nav>
@@ -585,6 +609,9 @@ burger.addEventListener('click', e => {
 	var link2 = document.getElementById('a2');
 	var link3 = document.getElementById('a3');
 	var link4 = document.getElementById('a4');
+	var link5 = document.getElementById('a5');
+	var link6 = document.getElementById('a6');
+	var link7 = document.getElementById('a7');
 	var nav1 = document.getElementById('nav');
 
 // 鼠标移入事件
@@ -627,7 +654,7 @@ link2.addEventListener('mouseout', function() {
 // 鼠标移入事件
 link3.addEventListener('mouseover', function() {
   // 修改文本
-  this.textContent = 'SO';
+  this.textContent = 'REALLY';
   this.style.color = "#FB6B90"
     // nav1.style.background = "#FB6B90"
   // 修改样式
@@ -646,8 +673,8 @@ link3.addEventListener('mouseout', function() {
 // 鼠标移入事件
 link4.addEventListener('mouseover', function() {
   // 修改文本
-  this.textContent = 'BEAUTIFUL';
-  this.style.color="#FB4570"
+  this.textContent = 'SO'
+  this.style.color="#FB6B90"
 //   nav1.style.background = "#FB4570"
   // 修改样式
 });
@@ -656,6 +683,63 @@ link4.addEventListener('mouseover', function() {
 link4.addEventListener('mouseout', function() {
   // 恢复文本
   this.textContent = 'MOON';
+    this.style.color = "#EFEBE0"
+    // nav1.style.background = "#66CC77"
+  // 恢复样式
+});
+
+
+// 鼠标移入事件
+link5.addEventListener('mouseover', function() {
+  // 修改文本
+  this.textContent = 'SINCERITY';
+  this.style.color="#FB4570"
+//   nav1.style.background = "#FB4570"
+  // 修改样式
+});
+
+// 鼠标移出事件
+link5.addEventListener('mouseout', function() {
+  // 恢复文本
+  this.textContent = 'GOOD';
+    this.style.color = "#EFEBE0"
+    // nav1.style.background = "#66CC77"
+  // 恢复样式
+});
+
+
+// 鼠标移入事件
+link6.addEventListener('mouseover', function() {
+  // 修改文本1
+  this.textContent = 'KINDNESS';
+  this.style.color="#FB4570"
+//   nav1.style.background = "#FB4570"
+  // 修改样式
+});
+
+// 鼠标移出事件
+link6.addEventListener('mouseout', function() {
+  // 恢复文本
+  this.textContent = 'EVERY';
+    this.style.color = "#EFEBE0"
+    // nav1.style.background = "#66CC77"
+  // 恢复样式
+});
+
+
+// 鼠标移入事件
+link7.addEventListener('mouseover', function() {
+  // 修改文本
+  this.textContent = 'BEAUTIFUL';
+  this.style.color="#FB4570"
+//   nav1.style.background = "#FB4570"
+  // 修改样式
+});
+
+// 鼠标移出事件
+link7.addEventListener('mouseout', function() {
+  // 恢复文本
+  this.textContent = 'NIGHT';
     this.style.color = "#EFEBE0"
     // nav1.style.background = "#66CC77"
   // 恢复样式
