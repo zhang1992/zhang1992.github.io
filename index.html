@@ -123,8 +123,8 @@
             transform: translateX(-5px);
             transition: 0.16s cubic-bezier(0.44, 0.09, 0.46, 0.84);
             opacity: 0;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         nav a {
@@ -251,28 +251,28 @@
             <span></span>
         </button>
     </div>
-    <nav data-state="closed" id="nav">
+    <nav data-state="closed" id="nav" style="background-color: #FB8DA0; color: white;">
         <ul>
             <li>
-                <a id="a1">TALKING</a>
+                <a id="a1">HI</a>
             </li>
-            <li>
+            <!-- <li>
                 <a id="a2">TO</a>
+            </li> -->
+            <li>
+                <a id="a3">MOON</a>
             </li>
             <li>
-                <a id="a3">THE</a>
+                <a id="a4">NICE</a>
             </li>
             <li>
-                <a id="a4">MOON</a>
+                <a id="a5">TO</a>
             </li>
             <li>
-                <a id="a5">GOOD</a>
+                <a id="a6">MEET</a>
             </li>
             <li>
-                <a id="a6">EVERY</a>
-            </li>
-            <li>
-                <a id="a7">NIGHT</a>
+                <a id="a7">YOU</a>
             </li>
         </ul>
     </nav>
@@ -668,7 +668,7 @@
 
         // 获取 < a > 标签元素
         var link1 = document.getElementById('a1');
-        var link2 = document.getElementById('a2');
+        // var link2 = document.getElementById('a2');
         var link3 = document.getElementById('a3');
         var link4 = document.getElementById('a4');
         var link5 = document.getElementById('a5');
@@ -682,43 +682,43 @@
             // 修改文本
             this.textContent = 'YOU';
             // 修改样式
-            this.style.color = "#F7CBCA"
+            this.style.color = "#FB4570"
             //   nav1.style.background = "#EFEBE0"
         });
 
         // 鼠标移出事件
         link1.addEventListener('mouseout', function () {
             // 恢复文本
-            this.textContent = 'TALKING';
+            this.textContent = 'HI';
             this.style.color = "#EFEBE0"
             //   nav1.style.background = "#66CC77"
             // 恢复样式
         });
 
-        // 鼠标移入事件
-        link2.addEventListener('mouseover', function () {
-            // 修改文本
-            this.textContent = 'ARE';
-            // 修改样式
-            this.style.color = "#FB8DA0"
-            // nav1.style.background = "#FB8DA0"
-        });
+        // // 鼠标移入事件
+        // link2.addEventListener('mouseover', function () {
+        //     // 修改文本
+        //     this.textContent = 'ARE';
+        //     // 修改样式
+        //     this.style.color = "#FB8DA0"
+        //     // nav1.style.background = "#FB8DA0"
+        // });
 
-        // 鼠标移出事件
-        link2.addEventListener('mouseout', function () {
-            // 恢复文本
-            this.textContent = 'TO';
-            this.style.color = "#EFEBE0"
-            // nav1.style.background = "#66CC77"
-            // 恢复样式
-        });
+        // // 鼠标移出事件
+        // link2.addEventListener('mouseout', function () {
+        //     // 恢复文本
+        //     this.textContent = 'THE';
+        //     this.style.color = "#EFEBE0"
+        //     // nav1.style.background = "#66CC77"
+        //     // 恢复样式
+        // });
 
 
         // 鼠标移入事件
         link3.addEventListener('mouseover', function () {
             // 修改文本
-            this.textContent = 'REALLY';
-            this.style.color = "#FB6B90"
+            this.textContent = 'ARE';
+            this.style.color = "#FB4570"
             // nav1.style.background = "#FB6B90"
             // 修改样式
         });
@@ -726,7 +726,7 @@
         // 鼠标移出事件
         link3.addEventListener('mouseout', function () {
             // 恢复文本
-            this.textContent = 'THE';
+            this.textContent = 'MOON';
             this.style.color = "#EFEBE0"
             //   nav1.style.background = "#66CC77"
             // 恢复样式
@@ -737,7 +737,7 @@
         link4.addEventListener('mouseover', function () {
             // 修改文本
             this.textContent = 'SO'
-            this.style.color = "#FB6B90"
+            this.style.color = "#FB4570"
             //   nav1.style.background = "#FB4570"
             // 修改样式
         });
@@ -745,7 +745,7 @@
         // 鼠标移出事件
         link4.addEventListener('mouseout', function () {
             // 恢复文本
-            this.textContent = 'MOON';
+            this.textContent = 'NICE';
             this.style.color = "#EFEBE0"
             // nav1.style.background = "#66CC77"
             // 恢复样式
@@ -764,7 +764,7 @@
         // 鼠标移出事件
         link5.addEventListener('mouseout', function () {
             // 恢复文本
-            this.textContent = 'GOOD';
+            this.textContent = 'TO';
             this.style.color = "#EFEBE0"
             // nav1.style.background = "#66CC77"
             // 恢复样式
@@ -783,7 +783,7 @@
         // 鼠标移出事件
         link6.addEventListener('mouseout', function () {
             // 恢复文本
-            this.textContent = 'EVERY';
+            this.textContent = 'MEET';
             this.style.color = "#EFEBE0"
             // nav1.style.background = "#66CC77"
             // 恢复样式
@@ -802,7 +802,7 @@
         // 鼠标移出事件
         link7.addEventListener('mouseout', function () {
             // 恢复文本
-            this.textContent = 'NIGHT';
+            this.textContent = 'YOU';
             this.style.color = "#EFEBE0"
             // nav1.style.background = "#66CC77"
             // 恢复样式
